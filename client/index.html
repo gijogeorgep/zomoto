@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="src/index.css" />
+    <script defer src="src/script.js"></script>
+  </head>
+  <body>
+    <main class="w-full">
+      <nav
+        class="header relative shadow-2xl w-full h-80 flex flex-col justify-between items-center bg-cover bg-center bg-[url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png')]"
+      >
+        <div class="w-full flex justify-between items-start px-5 mt-5">
+          <div id="hamburger" class="menu w-9 md:hidden">
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/50/FFFFFF/menu--v1.png"
+              alt="menu--v1"
+            />
+            <div class="modal md:hidden">
+              <div class="navmob"></div>
+            </div>
+          </div>
+          <section
+            class="hidden md:flex flex-row justify-end items-center space-x-6 mr-10 ml-auto"
+          >
+            <div><a href="#" class="text-white">Investor Relations</a></div>
+            <div><a href="#" class="text-white">Add Restaurant</a></div>
+            <div id="loginbtn"><a href="login.html" class="text-white">Log In</a>
+      
+            </div>
+            <div id="signupbtn"><a href="signup.html" class="text-white">Sign Up</a></div>
+          </section>
+        </div>
+
+        <div class="logo flex-grow flex items-center justify-center">
+          <img
+            src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png"
+            alt="zomato-logo"
+            class="w-60 md:w-60"
+          />
+        </div>
+        <h1 class="text-white font-extralight text-2xl ml-4 mb-3 md:mb-4">
+          Discover the best food and drinks in Kozhikode
+        </h1>
+        <div
+          id="searchbar"
+          class="bg-white w-3/4 flex justify-between items-center px-8 h-16 border rounded-lg mb-8"
+        >
+          <div id="locationicon" class="flex items-center">
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/color/50/marker.png"
+              alt="marker"
+              class="mr-4"
+            />
+          </div>
+
+          <div id="search" class="flex items-center">
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+              alt="search"
+              class="md:mr-60 mr-10"
+            />
+          </div>
+        </div>
+      </nav>
+
+      <section
+        id="foodcard"
+        class="bg-white border border-gray-400 rounded-md w-80 h-auto mt-3 ml-9 md:ml-28 md:mt-10 md:w-96 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+      >
+        <div class="w-full h-40 overflow-hidden rounded-t-xl">
+          <img
+            src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2023/11/21/FNK_Intsant-Pot-Texas-Style-Chili-Mac_H1.jpg.rend.hgtvcom.791.594.suffix/1700604212111.jpeg"
+            alt="Food Image"
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <div class="p-4">
+          <h1 class="text-lg font-semibold">Order Online</h1>
+          <p class="text-sm text-gray-600">Stay home and order to your door</p>
+        </div>
+      </section>
+
+      <div class="flex flex-row text-xl px-1 mt-5 mb-2 text-gray-700 md:ml-12">
+        popular localities in and around
+        <span class="font-bold px-1">Kozhikode</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 rounded-lg px-10">
+        <div class="p-4 bg-white border border-gray-300 text-center rounded-lg">
+          <div class="flex justify-end">
+            <img
+              class="w-4 h-4"
+              src="https://img.icons8.com/material/24/chevron-right--v1.png"
+              alt="chevron-right--v1"
+            />
+          </div>
+          <h1 class="text-lg mb-2">Palayam</h1>
+          <p class="text-gray-600">181 places</p>
+        </div>
+
+        <div class="p-4 bg-white border border-gray-300 text-center rounded-lg">
+          <h1 class="text-lg mb-2">Vellayil</h1>
+          <p class="text-gray-600">157 places</p>
+        </div>
+        <div class="p-4 bg-white border border-gray-300 text-center rounded-lg">
+          <h1 class="text-lg mb-2">Kuttichira</h1>
+          <p class="text-gray-600">104 places</p>
+        </div>
+        <div class="p-4 bg-white border border-gray-300 text-center rounded-lg">
+          <h1 class="text-lg mb-2">Ummalathoor</h1>
+          <p class="text-gray-600">104 places</p>
+        </div>
+        <div class="p-4 bg-white border border-gray-300 text-center rounded-lg">
+          <h1 class="text-lg mb-2">Malaparamba</h1>
+          <p class="text-gray-600">65 places</p>
+        </div>
+        <div class="p-4 bg-white border border-gray-300 text-center rounded-lg">
+          <h1 class="text-lg mb-2">Bilathikulam</h1>
+          <p class="text-gray-600">58 places</p>
+        </div>
+        <div class="p-4 bg-white border border-gray-300 text-center rounded-lg">
+          <h1 class="text-lg mb-2">Thiruvannur</h1>
+          <p class="text-gray-600">27 places</p>
+        </div>
+        <div class="p-4 bg-white border border-gray-300 text-center rounded-lg">
+          <h1 class="text-lg mb-2">Palakottuvayal</h1>
+          <p class="text-gray-600">23 places</p>
+        </div>
+        <div class="p-4 bg-white border border-gray-300 text-center rounded-lg">
+          <h1 class="text-lg mb-2">see more</h1>
+        </div>
+      </div>
+
+      <section
+        id="app"
+        class="bg-[#fffbf7] flex flex-col sm:flex-row justify-center items-center w-full px-4 sm:px-20 h-auto sm:h-96 mt-10"
+      >
+        <img
+          class="w-full sm:w-1/2 sm:px-40 mb-4 sm:mb-0"
+          src="https://b.zmtcdn.com/data/o2_assets/f773629053b24263e69f601925790f301680693809.png"
+          alt="Zomato App"
+        />
+        <div
+          class="w-full sm:w-1/2 flex flex-col justify-center items-center px-4 sm:px-0"
+        >
+          <h1 class="font-semibold font-sans mb-4 text-2xl sm:text-3xl">
+            Get the Zomato app now
+          </h1>
+          <p class="mt-4 text-center text-sm sm:text-base">
+            We will send you a link, open it on your phone to download the app
+          </p>
+          <div
+            class="flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-2 sm:space-y-0 text-base sm:text-2xl mt-4"
+          >
+            <label class="flex items-center">
+              <input
+                type="radio"
+                name="contact"
+                id="email"
+                class="form-radio text-red-600 h-5 w-5 mr-2"
+                onclick="updateInput('email')"
+              />
+              <span class="text-base sm:text-lg font-medium">Email</span>
+            </label>
+            <label class="flex items-center">
+              <input
+                type="radio"
+                name="contact"
+                id="phoneno"
+                class="form-radio text-red-600 h-5 w-5 mr-2"
+                onclick="updateInput('phone')"
+              />
+              <span class="text-base sm:text-lg font-medium">Phone</span>
+            </label>
+          </div>
+          <input
+            type="text"
+            id="contactInput"
+            class="border border-black rounded-lg w-full sm:w-60 h-10 mt-4 px-3 focus:outline-none focus:border-red-500"
+            placeholder="Enter email or phone number"
+          />
+        </div>
+      </section>
+
+      <section id="explore" class="flex flex-col">
+        <div>
+          <p
+            class="flex justify-center items-center mt-9 font-sans text-2xl font-bold text-gray-600 mb-6"
+          >
+            Explore options near me
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center space-y-3">
+          <button
+            class="border border-gray-500 w-3/5 h-20 bg-white px rounded-md"
+          >
+            Popular cusine near me
+          </button>
+
+          <button
+            class="border border-gray-500 w-3/5 h-20 bg-white px rounded-md"
+          >
+            Popular Restaurant type near me
+          </button>
+
+          <button
+            class="border border-gray-500 w-3/5 h-20 bg-white px rounded-md"
+          >
+            Top Restaurant chain
+          </button>
+
+          <button
+            class="border border-gray-500 w-3/5 h-20 bg-white px rounded-md"
+          >
+            Cities we deliver to
+          </button>
+        </div>
+      </section>
+
+      <footer class="w-full h-auto px-6 py-6 bg-[#fffbf7] mt-9">
+        <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+          <img
+            src="zomotoblklogo.png"
+            alt="Zomato Logo"
+            class="w-36 mb-4 sm:mb-0"
+          />
+        </div>
+
+        <div
+          class="flex flex-wrap justify-between space-y-6 sm:space-y-0 sm:space-x-10"
+        >
+          <div class="flex flex-col space-y-2">
+            <a href="">
+              <h1 class="font-semibold">About Zomato</h1>
+            <div class="text-gray-600 font-thin">
+              <p>Who we are</p>
+              <p>Blog</p>
+              <p>Work with us</p>
+              <p>Investor Relations</p>
+              <p>Report fraud</p>
+              <p>Press kit</p>
+              <p>Contact Us</p>
+            </div>
+
+            </a>
+            
+          </div>
+
+          <div class="flex flex-col space-y-2">
+            <a href="">
+              <h1 class="font-semibold">Zomaverse</h1>
+              <div class="text-gray-600 font-thin">
+                <p>Zomato</p>
+                <p>Blinkit</p>
+                <p>Feeding India</p>
+                <p>Hyper pure</p>
+                <p>Press live</p>
+                <p>Zomaland</p>
+                <p>Weather Union</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="flex flex-col space-y-2">
+            <a href="">
+              <h1 class="font-semibold">For Restaurants</h1>
+            <div class="text-gray-600 font-thin">
+              <p>Partner with Us</p>
+              <p>App for You</p>
+            </div>
+          </div>
+            </a>
+            
+
+          <div class="flex flex-col space-y-2">
+            <a href="">
+              <h1 class="font-semibold">Learn More</h1>
+            <div class="text-gray-600 font-thin">
+              <p>Privacy</p>
+              <p>Security</p>
+              <p>Terms</p>
+              <p>Sitemap</p>
+            </div>
+          </div>
+            </a>
+            
+
+          <div class="flex flex-col space-y-2">
+            <h1 class="font-semibold">Social Links</h1>
+            <div class="text-gray-600 font-thin"></div>
+          </div>
+        </div>
+        <hr class="mt-10" />
+        <p class="mt-9 font-thin">
+          By continuing past this page, you agree to our Terms of Service,
+          Cookie Policy, Privacy Policy and Content Policies. All trademarks are
+          properties of their respective owners. 2008-2024 © Zomato™ Ltd. All
+          rights reserved.
+        </p>
+      </footer>
+
+
+
+    </main>
+
+    <div id="menu" class="hidden">
+      <section
+        class="flex flex-col justify-start items-start space-y-4 left-6 px-4 bg-white h-screen"
+      >
+        <div class="flex flex-row justify-end items-end w-36 ml-60">
+          <img src="zomotoblklogo.png" alt="" />
+        </div>
+        <div id="crossbutton" class="justify-start items-end">
+          <img
+            width="40"
+            height="40"
+            src="https://img.icons8.com/ios/50/multiply.png"
+            alt="multiply"
+          />
+        </div>
+        <div><a href="#" class="text-gray-500">Investor Relations</a></div>
+        <div><a href="#" class="text-gray-500">Add Restaurant</a></div>
+        <div><a href="login.html" class="text-gray-500">Log In</a></div>
+        <div><a href="signup.html" class="text-gray-500">Sign Up</a></div>
+      </section>
+    </div>
+  </body>
+</html>

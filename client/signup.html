@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="src/index.css" />
+  </head>
+  <body
+    class="min-h-screen flex justify-center items-center bg-[url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png')] bg-cover bg-no-repeat bg-center"
+  >
+    <div
+      class="form-box bg-white w-4/5 max-w-md px-8 py-12 rounded-lg shadow-lg flex flex-col items-center"
+    >
+      <h1 class="font-medium text-2xl mb-6">Sign Up</h1>
+      <form class="w-full flex flex-col space-y-6">
+        <input
+          class="border border-gray-200 w-full h-12 rounded-lg px-4"
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="Full Name"
+        />
+        <input
+          class="border border-gray-200 w-full h-12 rounded-lg px-4"
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Email"
+        />
+        <div class="flex items-center space-x-2">
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms" class="text-sm"
+            >I agree to Zomato's
+            <a
+              href="https://www.zomato.com/policies/terms-of-service/"
+              class="text-red-600"
+              >Terms of Service</a
+            >,
+            <a
+              href="https://www.zomato.com/policies/privacy/"
+              class="text-red-600"
+              >Privacy Policy</a
+            >, and
+            <a href="https://www.zomato.com/policies/" class="text-red-600"
+              >Content Policies</a
+            >.</label
+          >
+        </div>
+        <button class="bg-red-600 rounded-lg w-full h-12 text-white">
+          Create an Account
+        </button>
+        <hr class="border border-gray-300 w-full mt-6" />
+        <p class="text-center">or</p>
+
+        <button
+          class="border border-gray-300 rounded-md w-full h-12 text-black flex flex-row justify-center items-center"
+        >
+          Sign in with google
+          <img
+            class="px-2"
+            width="48"
+            height="48"
+            src="https://img.icons8.com/color/48/google-logo.png"
+            alt="google-logo"
+          />
+        </button>
+        <hr class="border" />
+        <section class="already-acc flex flex-row space-x-1">
+          <span> Already have account?</span>
+
+          <span class="underline text-red-500"> <a href="login.html">login </span></a>
+        </section>
+        <div class="items-center flex justify-center "><span class="underline text-red-700"> <a href="index.html">home</span></div></a>
+      </form>
+    </div>
+    
+
+  </body>
+</html>
