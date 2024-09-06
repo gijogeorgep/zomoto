@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./signup.html",
     "./login.html",
+
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
