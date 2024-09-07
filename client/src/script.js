@@ -18,16 +18,7 @@ crossbutton.addEventListener("click", () => {
   menuPage.classList.toggle("hidden");
 });
 
-function updateInput(type) {
-  const input = document.getElementById("contactInput");
-  if (type === "email") {
-    input.placeholder = "Enter your email";
-    input.type = "email";
-  } else if (type === "phone") {
-    input.placeholder = "Enter your phone number";
-    input.type = "tel";
-  }
-}
+//
 crossbutton.addEventListener("click", () => {
   modelLogin.classList.toggle("hidden");
 });

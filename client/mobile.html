@@ -8,23 +8,37 @@
     <script defer src="src/script.js"></script>
   </head>
   <body>
-    <!-- <nav class="bg-white flex items-center justify-center">
-      <img
-        class="w-7 h-7 mx-auto"
-        src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
-        alt="logo"
-      />
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-200">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-6">
+          <!-- Logo -->
 
-      <div class="flex space-x-6">
-        <div id="loginBtn">
-          <a href="" class="text-black flex">Log In</a>
-        </div>
+          <div
+            class="flex flex-col items-center sm:flex-row sm:justify-between"
+          >
+            <a href="index.html">
+              <img
+                src="zomotoblklogo.png"
+                alt="Zomato Logo"
+                class="w-10 h-10 mb-4 sm:mb-0"
+              />
+            </a>
+          </div>
 
-        <div id="signupBtn">
-          <a href="" class="text-black">Sign Up</a>
+          <div id="loginBtn">
+            <a href="login.html">
+              <p class="text-black cursor-pointer">Log In</p>
+            </a>
+          </div>
+          <div id="signupBtn">
+            <a href="signup.html">
+              <p class="text-black cursor-pointer">Sign Up</p>
+            </a>
+          </div>
         </div>
       </div>
-    </nav> -->
+    </nav>
 
     <hr class="w-full border-gray-950" />
     <section
@@ -52,13 +66,18 @@
             <input
               type="radio"
               name="contact"
-              id="phoneno"
+              id="email`"
               class="form-radio text-red-600 h-5 w-5 mr-2"
             />
             <span class="text-base sm:text-lg font-medium">email</span>
           </label>
           <label class="flex items-center">
-            <input type="radio" name="contact" id="phoneno" />
+            <input
+              type="radio"
+              name="contact"
+              id="phoneno"
+              class="form-radio text-red-600 h-5 w-5 mr-2"
+            />
             <span class="text-base sm:text-lg font-medium">Phone</span>
           </label>
         </div>
