@@ -2,8 +2,9 @@
 export default {
   content: [
     "./index.html",
-    "./signup.html",
-    "./login.html",
+    "./src/pages/signup.html",
+    "./src/pages/login.html",
+    "./src/pages/mobile.html",
 
     "./src/**/*.{js,ts,jsx,tsx}",
   ],

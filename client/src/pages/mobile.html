@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mobile app</title>
-    <link rel="stylesheet" href="src/index.css" />
-    <script defer src="src/script.js"></script>
+    <link rel="stylesheet" href="../index.css" />
+    <script defer type="module" src="../script.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -17,11 +17,11 @@
           <div
             class="flex flex-col items-center sm:flex-row sm:justify-between"
           >
-            <a href="index.html">
+            <a href="../../index.html">
               <img
-                src="zomotoblklogo.png"
+                src="../../zomotoblklogo.png"
                 alt="Zomato Logo"
-                class="w-10 h-10 mb-4 sm:mb-0"
+                class="w-36 mb-4 sm:mb-0"
               />
             </a>
           </div>
@@ -43,7 +43,7 @@
     <hr class="w-full border-gray-950" />
     <section
       id="app"
-      class="bg-[#fffbf7] flex flex-col sm:flex-row justify-center items-center w-full px-4 sm:px-20 h-auto sm:h-96 mt-10"
+      class="bg-[#f8f8f8] flex flex-col sm:flex-row justify-center items-center w-full px-4 sm:px-20 h-auto sm:h-96 mt-10"
     >
       <img
         class="w-full sm:w-1/2 sm:px-40 mb-4 sm:mb-0"
@@ -92,7 +92,7 @@
 
     <!-- footer -->
 
-    <footer class="w-full h-auto px-6 py-6 bg-[#fffbf7] mt-9">
+    <footer class="w-full h-auto px-6 py-6 bg-[#f8f8f8] mt-9">
       <div class="flex justify-end space-x-10">
         <div
           id="india"
@@ -135,7 +135,7 @@
 
       <div class="flex flex-col items-center sm:flex-row sm:justify-between">
         <img
-          src="zomotoblklogo.png"
+          src="../../zomotoblklogo.png"
           alt="Zomato Logo"
           class="w-36 mb-4 sm:mb-0"
         />
@@ -143,66 +143,71 @@
 
       <div class="flex flex-wrap justify-between">
         <div class="flex flex-col">
-          <a href="">
-            <h1 class="font-semibold">About Zomato</h1>
-            <div class="text-gray-600 font-thin">
-              <p>Who we are</p>
-              <p>Blog</p>
-              <p>Work with us</p>
-              <p>Investor Relations</p>
-              <p>Report fraud</p>
-              <p>Press kit</p>
-              <p>Contact Us</p>
-            </div>
-          </a>
+          <h1 class="font-semibold cursor-pointer">About Zomato</h1>
+          <div class="text-gray-600 font-thin">
+            <ul>
+              <li>Who we are</li>
+              <li>Blog</li>
+              <li>Work with us</li>
+              <li>Investor Relations</li>
+              <li>Report fraud</li>
+              <li>Press kit</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="flex flex-col">
-          <a href="">
-            <h1 class="font-semibold">Zomaverse</h1>
-            <div class="text-gray-600 font-thin">
-              <p>Zomato</p>
-              <p>Blinkit</p>
-              <p>Feeding India</p>
-              <p>Hyper pure</p>
-              <p>Press live</p>
-              <p>Zomaland</p>
-              <p>Weather Union</p>
-            </div>
-          </a>
+        <div class="flex flex-col cursor-pointer">
+          <h1 class="font-semibold">Zomaverse</h1>
+          <div class="text-gray-600 font-thin">
+            <ul>
+              <li>Zomato</li>
+              <li>Blinkit</li>
+              <li>Feeding India</li>
+              <li>Hyper pure</li>
+              <li>Press live</li>
+              <li>Zomaland</li>
+              <li>Weather Union</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="flex flex-col">
-          <a href="">
-            <h1 class="font-semibold">For Restaurants</h1>
-            <div class="text-gray-600 font-thin">
-              <p>Partner with Us</p>
-              <p>App for You</p>
-            </div>
-          </a>
+        <div class="flex flex-col cursor-pointer">
+          <h1 class="font-semibold">For Restaurants</h1>
+          <div class="text-gray-600 font-thin">
+            <ul>
+              <li>Partner with Us</li>
+              <li>App for You</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="flex flex-col mt-5 md:mt-0">
-          <a href="">
-            <h1 class="font-semibold">Learn More</h1>
-            <div class="text-gray-600 font-thin">
-              <p>Privacy</p>
-              <p>Security</p>
-              <p>Terms</p>
-              <p>Sitemap</p>
-            </div></a
-          >
+        <div class="flex flex-col mt-5 md:mt-0 cursor-pointer">
+          <h1 class="font-semibold">Learn More</h1>
+          <div class="text-gray-600 font-thin">
+            <ul>
+              <li>Privacy</li>
+              <li>Security</li>
+              <li>Terms</li>
+              <li>Sitemap</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="flex flex-col mt-5 md:mt-0">
+        <div class="flex flex-col mt-5 md:mt-0 cursor-pointer">
           <h1 class="font-semibold">Social Links</h1>
           <div class="flex flex-wrap justify-between">
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-glyphs/30/linkedin-circled--v1.png"
-              alt="linkedin-circled--v1"
-            />
+            <a
+              href="https://www.linkedin.com/company/zomato/?originalSubdomain=in"
+            >
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/30/linkedin-circled--v1.png"
+                alt="linkedin-circled--v1"
+              />
+            </a>
+
             <img
               width="30"
               height="30"
